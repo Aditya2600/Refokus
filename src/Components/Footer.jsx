@@ -13,13 +13,13 @@ function Footer() {
           <div className="basis-1/3">
             <h4 className="mb-10 text-zinc-500 capitalize">Socials</h4>
             {["Instagram", "Twitter (X?)", "Linkedin"].map((item, index) => (
-              <a className="block mt-2 capitalize text-zinc-600">{item}</a>
+              <a key={index} className="block mt-2 capitalize text-zinc-600">{item}</a>
             ))}
           </div>
           <div className="basis-1/3">
             <h4 className="mb-10 text-zinc-500 capitalize">Socials</h4>
             {["Instagram", "Twitter (X?)", "Linkedin"].map((item, index) => (
-              <a className="block mt-2 capitalize text-zinc-600">{item}</a>
+              <a key={index} className="block mt-2 capitalize text-zinc-600">{item}</a>
             ))}
           </div>
           <div className="basis-1/3 flex flex-col items-end">
@@ -27,7 +27,11 @@ function Footer() {
               Refokus is pioneering digital agency driven by design and
               empowered by technology.
             </p>
-            <img className="w-32 mt-10 " src="https://assets-global.website-files.com/5df3de8e749203dc3167a479/65369e818884afbae46a35fc_Webflow-badge.svg" alt="" />
+            <img
+              className="w-32 mt-10 "
+              src="https://assets-global.website-files.com/5df3de8e749203dc3167a479/65369e818884afbae46a35fc_Webflow-badge.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
